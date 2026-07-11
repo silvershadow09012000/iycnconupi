@@ -17,27 +17,29 @@ body{
 
 .card{
     width:100%;
-    max-width:440px;
-    background:#fff;
+    max-width:460px;
+    background:#ffffff;
     border-radius:18px;
-    box-shadow:0 12px 35px rgba(0,0,0,.22);
     overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.22);
 }
 
 .header{
     background:linear-gradient(135deg,#0f4c81,#1d79c4);
     color:#fff;
-    padding:24px;
     text-align:center;
+    padding:28px 24px;
 }
 
 .header h2{
-    margin:0 0 10px;
-    font-size:18px;
+    margin:0;
+    font-size:20px;
+    font-weight:700;
 }
 
 .header div{
-    font-size:15px;
+    margin-top:12px;
+    font-size:16px;
     opacity:.95;
 }
 
@@ -47,38 +49,50 @@ body{
 
 .summary{
     background:#f5f9fc;
-    border-radius:12px;
+    border:1px solid #d8e6f2;
+    border-radius:14px;
     padding:18px;
-    margin-bottom:18px;
+    margin-bottom:22px;
 }
 
 .summary h3{
-    margin:0 0 12px;
-    font-size:18px;
+    margin:0;
+    font-size:17px;
+    font-weight:700;
+    color:#1a1a1a;
 }
 
 .summary div{
+    margin-top:6px;
     font-size:16px;
 }
 
 .amount{
     margin-top:8px;
-    font-size:44px;
-    color:#c62828;
+    font-size:48px;
     font-weight:700;
+    color:#d32f2f;
+}
+
+.choose{
+    text-align:center;
+    font-size:17px;
+    font-weight:700;
+    color:#222;
+    margin:18px 0;
 }
 
 .btn{
     display:block;
     width:100%;
-    padding:15px;
-    margin:12px 0;
-    border-radius:12px;
+    padding:16px;
+    margin:14px 0;
+    border-radius:14px;
     text-decoration:none;
     color:#fff;
     text-align:center;
-    font-weight:700;
     font-size:18px;
+    font-weight:700;
     transition:.2s;
 }
 
@@ -100,38 +114,126 @@ body{
 }
 
 .bhim{
-    background:#4a4a4a;
+    background:#4b4b4b;
+}
+
+.notice{
+    margin-top:20px;
+    padding:16px;
+    border-left:4px solid #0f8bd1;
+    background:#f7fbff;
+    border-radius:6px;
+}
+
+.notice strong{
+    display:block;
+    margin-bottom:6px;
+    font-size:17px;
+    color:#000;
+}
+
+.notice p{
+    margin:0;
+    color:#444;
+    font-size:15px;
+    line-height:1.45;
+}
+
+.instructions{
+    margin-top:18px;
+    text-align:center;
+    color:#666;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.website{
+    margin-top:18px;
+    text-align:center;
+}
+
+.website a{
+    color:#0d47a1;
+    text-decoration:underline;
+    font-weight:600;
+    font-size:15px;
 }
 
 .footer{
-    margin-top:20px;
+    margin-top:18px;
+    padding-top:16px;
+    border-top:1px solid #dddddd;
     text-align:center;
     color:#666;
     font-size:13px;
-    line-height:1.4;
+    line-height:1.45;
 }
 
-@media(max-width:480px){
+.footer b{
+    color:#444;
+}
+
+@media (max-width:480px){
 
     body{
-        padding:14px;
+        padding:12px;
+    }
+
+    .card{
+        max-width:100%;
+    }
+
+    .header{
+        padding:24px 18px;
+    }
+
+    .header h2{
+        font-size:18px;
+    }
+
+    .header div{
+        font-size:15px;
     }
 
     .content{
         padding:18px;
     }
 
-    .header{
-        padding:22px 18px;
+    .summary{
+        padding:16px;
+    }
+
+    .summary h3{
+        font-size:16px;
     }
 
     .amount{
-        font-size:40px;
+        font-size:42px;
     }
 
     .btn{
         font-size:17px;
-        padding:14px;
+        padding:15px;
+    }
+
+    .notice strong{
+        font-size:16px;
+    }
+
+    .notice p{
+        font-size:14px;
+    }
+
+    .instructions{
+        font-size:13px;
+    }
+
+    .website a{
+        font-size:14px;
+    }
+
+    .footer{
+        font-size:12px;
     }
 
 }
