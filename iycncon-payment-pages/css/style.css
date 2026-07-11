@@ -1,9 +1,137 @@
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
 
-body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#0f4c81,#00a3c8);display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px}
-.card{max-width:430px;width:100%;background:#fff;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.2);overflow:hidden}
-.header{background:linear-gradient(135deg,#0f4c81,#1d79c4);color:#fff;padding:24px;text-align:center}
-.content{padding:24px}.summary{background:#f5f9fc;border-radius:12px;padding:16px}
-.amount{font-size:42px;color:#c62828;font-weight:bold}
-.btn{display:block;width:100%;padding:16px;margin:14px 0;border-radius:12px;text-decoration:none;color:#fff;text-align:center;font-weight:bold}
-.phonepe{background:#5f259f}.gpay{background:#1a73e8}.bhim{background:#444}
-.footer{text-align:center;color:#666;font-size:13px;margin-top:20px}
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#0f4c81,#00a3c8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:440px;
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 12px 35px rgba(0,0,0,.22);
+    overflow:hidden;
+}
+
+.header{
+    background:linear-gradient(135deg,#0f4c81,#1d79c4);
+    color:#fff;
+    padding:24px;
+    text-align:center;
+}
+
+.header h2{
+    margin:0 0 10px;
+    font-size:18px;
+}
+
+.header div{
+    font-size:15px;
+    opacity:.95;
+}
+
+.content{
+    padding:22px;
+}
+
+.summary{
+    background:#f5f9fc;
+    border-radius:12px;
+    padding:18px;
+    margin-bottom:18px;
+}
+
+.summary h3{
+    margin:0 0 12px;
+    font-size:18px;
+}
+
+.summary div{
+    font-size:16px;
+}
+
+.amount{
+    margin-top:8px;
+    font-size:44px;
+    color:#c62828;
+    font-weight:700;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border-radius:12px;
+    text-decoration:none;
+    color:#fff;
+    text-align:center;
+    font-weight:700;
+    font-size:18px;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    filter:brightness(1.05);
+}
+
+.btn:active{
+    transform:scale(.98);
+}
+
+.phonepe{
+    background:#5f259f;
+}
+
+.gpay{
+    background:#1a73e8;
+}
+
+.bhim{
+    background:#4a4a4a;
+}
+
+.footer{
+    margin-top:20px;
+    text-align:center;
+    color:#666;
+    font-size:13px;
+    line-height:1.4;
+}
+
+@media(max-width:480px){
+
+    body{
+        padding:14px;
+    }
+
+    .content{
+        padding:18px;
+    }
+
+    .header{
+        padding:22px 18px;
+    }
+
+    .amount{
+        font-size:40px;
+    }
+
+    .btn{
+        font-size:17px;
+        padding:14px;
+    }
+
+}
