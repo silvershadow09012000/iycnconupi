@@ -1,0 +1,9 @@
+
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#0f4c81,#00a3c8);display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px}
+.card{max-width:430px;width:100%;background:#fff;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.2);overflow:hidden}
+.header{background:linear-gradient(135deg,#0f4c81,#1d79c4);color:#fff;padding:24px;text-align:center}
+.content{padding:24px}.summary{background:#f5f9fc;border-radius:12px;padding:16px}
+.amount{font-size:42px;color:#c62828;font-weight:bold}
+.btn{display:block;width:100%;padding:16px;margin:14px 0;border-radius:12px;text-decoration:none;color:#fff;text-align:center;font-weight:bold}
+.phonepe{background:#5f259f}.gpay{background:#1a73e8}.bhim{background:#444}
+.footer{text-align:center;color:#666;font-size:13px;margin-top:20px}
