@@ -2,7 +2,7 @@ function launch(app) {
 
     let packageName = "";
 
-    switch(app) {
+    switch (app) {
 
         case "gpay":
             packageName = "com.google.android.apps.nbu.paisa.user";
@@ -23,7 +23,7 @@ function launch(app) {
     const params = new URLSearchParams({
         pa: "apps290@oksbi",
         pn: "APOORVA DODDAMANI",
-        am: "3",
+        am: "4",
         cu: "INR",
         tn: "Faculty Registration - IYCNCON 2026",
         tr: "FAC" + Date.now()
@@ -40,4 +40,5 @@ function launch(app) {
     alert(intent);
 
     window.location.href = intent;
+
 }
